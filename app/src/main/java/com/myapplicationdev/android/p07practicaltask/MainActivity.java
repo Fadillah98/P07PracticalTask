@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             case 0: {
                 if (grantResults.length > 0 &&
                         grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    btnRetrieve.performClick();
+                    Toast.makeText(MainActivity.this, "Permission granted", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MainActivity.this, "Permission not granted", Toast.LENGTH_SHORT).show();
                 }
